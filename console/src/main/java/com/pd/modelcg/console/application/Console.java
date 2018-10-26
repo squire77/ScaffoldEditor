@@ -44,16 +44,16 @@ public class Console extends JFrame implements ITitleIndicator {
     @Value("${project.recent")
     private String test;
 
-    @Value("${project.recent:C:/GitHub/ModelCG/projects/MyProject/MyProject.csv}")
-    private String mostRecentProject = "C:/GitHub/ModelCG/projects/MyProject/MyProject.csv";
+    @Value("${project.recent:C:/GitHub/ScaffoldEditor/projects/MyProject/MyProject.csv}")
+    private String mostRecentProject = "C:/GitHub/ScaffoldEditor/projects/MyProject/MyProject.csv";
 
-    @Value("${license.file:C:/GitHub/ModelCG/projects/license.txt}")
-    private String licenseFile = "C:/GitHub/ModelCG/projects/license.txt";
+    @Value("${license.file:C:/GitHub/ScaffoldEditor/projects/license.txt}")
+    private String licenseFile = "C:/GitHub/ScaffoldEditor/projects/license.txt";
 
     public Console() {
         super(FRAME_TITLE);
         
-        validLicense = false;
+        validLicense = true;
         
         try {
             String licenseKey = FileUtility.readFile(licenseFile);
@@ -402,17 +402,17 @@ public class Console extends JFrame implements ITitleIndicator {
         helpMenu.add(projectHelp);
         clicheHelp.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent event) {
-                startViewer.openFile("C:\\GitHub\\ModelCG\\console\\src\\main\\resources/data/help/cliche_help.txt");
+                startViewer.openFile("C:/GitHub/ScaffoldEditor/console/src/main/resources/data/help/cliche_help.txt");
             }
         } );
         classHelp.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent event) {
-                startViewer.openFile("C:\\GitHub\\ModelCG\\console\\src\\main\\resources/data/help/class_help.txt");
+                startViewer.openFile("C:\\GitHub\\ScaffoldEditor\\console\\src\\main\\resources/data/help/class_help.txt");
             }
         } );
         projectHelp.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent event) {
-                startViewer.openFile("C:\\GitHub\\ModelCG\\console\\src\\main\\resources/data/help/project_help.txt");
+                startViewer.openFile("C:\\GitHub\\ScaffoldEditor\\console\\src\\main\\resources/data/help/project_help.txt");
             }
         } );
         
@@ -442,7 +442,7 @@ public class Console extends JFrame implements ITitleIndicator {
         } );        
         
         //set default start text
-        startViewer.openFile("C:\\GitHub\\ModelCG\\console\\src\\main\\resources/data/help/class_help.txt");
+        startViewer.openFile("C:/GitHub/ScaffoldEditor/console/src/main/resources/data/help/class_help.txt");
   
         // menu bar
         JMenuBar menuBar = new JMenuBar();

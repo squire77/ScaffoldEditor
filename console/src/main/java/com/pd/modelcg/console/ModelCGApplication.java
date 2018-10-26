@@ -1,7 +1,7 @@
 package com.pd.modelcg.console;
 
 import com.pd.modelcg.console.application.Console;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
@@ -9,12 +9,14 @@ import org.springframework.context.annotation.ComponentScan;
 import javax.swing.*;
 
 @ComponentScan(basePackages = "com.pd")
-@EnableAutoConfiguration
 public class ModelCGApplication {
 
     public static void main(String[] args) {
-        ConfigurableApplicationContext context = new SpringApplicationBuilder(
-                Console.class).headless(false).run(args);
+        ConfigurableApplicationContext context =
+                new SpringApplicationBuilder(Console.class)
+                        .web(WebApplicationType.NONE)
+                        .headless(false)
+                        .run(args);
         run(context.getBean(Console.class));
     }
 
