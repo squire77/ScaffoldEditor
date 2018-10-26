@@ -11,7 +11,7 @@ import com.pd.modelcg.console.docviewer.TemplateViewer;
 import com.pd.modelcg.console.docviewer.TextDocumentViewer;
 import com.pd.modelcg.console.fileexplorer.FileExplorer;
 import com.pd.modelcg.codegen.FileUtility;
-import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Component;
 
 import java.awt.BorderLayout;
@@ -36,27 +36,25 @@ import javax.swing.border.EtchedBorder;
 //                                              generatedExplorer
 //
 @Component
+@ComponentScan(basePackages = "com.pd.modelcg.console")
 public class Console extends JFrame implements ITitleIndicator {
 
-    @Value("${my.test.var:15}")
-    private int myVar;
+    private static final org.slf4j.Logger log = org.slf4j.LoggerFactory.getLogger(Console.class);
 
-    @Value("${project.recent")
-    private String test;
+    private final ConsoleConfig consoleConfig;
 
-    @Value("${project.recent:C:/GitHub/ScaffoldEditor/projects/MyProject/MyProject.csv}")
-    private String mostRecentProject = "C:/GitHub/ScaffoldEditor/projects/MyProject/MyProject.csv";
-
-    @Value("${license.file:C:/GitHub/ScaffoldEditor/projects/license.txt}")
-    private String licenseFile = "C:/GitHub/ScaffoldEditor/projects/license.txt";
-
-    public Console() {
+    public Console(ConsoleConfig consoleConfig) {
         super(FRAME_TITLE);
-        
+
+        this.consoleConfig = consoleConfig;
+
+        log.info(String.format("mostRecentProject = %s", consoleConfig.getMostRecentProject()));
+        log.info(String.format("licenseFile = %s", consoleConfig.getLicenseFile()));
+
         validLicense = true;
         
         try {
-            String licenseKey = FileUtility.readFile(licenseFile);
+            String licenseKey = FileUtility.readFile(consoleConfig.getLicenseFile());
             if (LicenseValidator.isValidLicenseKey(licenseKey)) {
                 validLicense = true;
             }
@@ -141,12 +139,10 @@ public class Console extends JFrame implements ITitleIndicator {
         JMenu fileMenu = new JMenu("File");
         JMenuItem exit = new JMenuItem("Exit");
         fileMenu.add(exit);
-        exit.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent event) {
-                dispose();
-                System.exit(0);
-            }
-        } );
+        exit.addActionListener((event) -> {
+            dispose();
+            System.exit(0);
+        });
 
         JMenu modelMenu = new JMenu("Model");
         JMenu generateMenu = new JMenu("Generate");        
@@ -156,39 +152,37 @@ public class Console extends JFrame implements ITitleIndicator {
         JMenuItem license = new JMenuItem( "License..." );
         aboutMenu.add(license);
         
-        license.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent event) {
-                String licenseKey = JOptionPane.showInputDialog(Console.this, "Enter License Key:");
-                
-                if (LicenseValidator.isValidLicenseKey(licenseKey)) {
-                    validLicense = true;
-                    
-                    try {
-                        FileUtility.writeFile(licenseFile, licenseKey);
-                    } catch (IOException ex) {
-                        JOptionPane.showMessageDialog(Console.this, 
-                           "Problem writing to license file: " + licenseFile + ".\n\n" +
-                                "To enable your product without the need to re-enter your license key, " + 
-                                "please paste your license key into a file named \"license.txt\" and " +
-                                "place the file in the installation directory.",
+        license.addActionListener((event) -> {
+            String licenseKey = JOptionPane.showInputDialog(Console.this, "Enter License Key:");
+
+            if (LicenseValidator.isValidLicenseKey(licenseKey)) {
+                validLicense = true;
+
+                try {
+                    FileUtility.writeFile(consoleConfig.getLicenseFile(), licenseKey);
+                } catch (IOException ex) {
+                    JOptionPane.showMessageDialog(Console.this,
+                            "Problem writing to license file: " + consoleConfig.getLicenseFile() + ".\n\n" +
+                                    "To enable your product without the need to re-enter your license key, " +
+                                    "please paste your license key into a file named \"license.txt\" and " +
+                                    "place the file in the installation directory.",
                             "Problem writing license key",
                             JOptionPane.WARNING_MESSAGE);
-                    }
-                    
-                    JOptionPane.showMessageDialog(Console.this,
-                        "Congratulations!\nThank you for purchasing " + PRODUCT_NAME + " by " + COMPANY_NAME + "." +
-                            "\n\nPlease restart " + PRODUCT_NAME + ".",
-                        "License Key Success",                        
-                        JOptionPane.INFORMATION_MESSAGE);
-                } else {
-                    JOptionPane.showMessageDialog(Console.this,
-                        "Invalid license key." + 
-                            "\nPlease purchase a valid license from http://www.pluggabledesignsoftware.com",
-                        "License Key Failure",                        
-                        JOptionPane.INFORMATION_MESSAGE);
                 }
+
+                JOptionPane.showMessageDialog(Console.this,
+                        "Congratulations!\nThank you for purchasing " + PRODUCT_NAME + " by " + COMPANY_NAME + "." +
+                                "\n\nPlease restart " + PRODUCT_NAME + ".",
+                        "License Key Success",
+                        JOptionPane.INFORMATION_MESSAGE);
+            } else {
+                JOptionPane.showMessageDialog(Console.this,
+                        "Invalid license key." +
+                                "\nPlease purchase a valid license from http://www.pluggabledesignsoftware.com",
+                        "License Key Failure",
+                        JOptionPane.INFORMATION_MESSAGE);
             }
-        } );
+        });
         
         // menu bar
         JMenuBar menuBar = new JMenuBar();
@@ -207,7 +201,7 @@ public class Console extends JFrame implements ITitleIndicator {
         Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
         setLocation((dim.width-w)/2, (dim.height-h)/2);
 
-        projectData = ProjectData.openProject(mostRecentProject); //create a new project for scaffolds
+        projectData = ProjectData.openProject(consoleConfig.getMostRecentProject());
         docMgr = new DocumentManager(this, this);
 
         //designate paths
@@ -256,11 +250,9 @@ public class Console extends JFrame implements ITitleIndicator {
         commandLinePanel.add(new JLabel("Command: ", JLabel.RIGHT)); //roughly 60 width
         commandField = new JTextField(); //new Java2sAutoTextField(cList, cBox);
         commandLinePanel.add(commandField); //roughly 520 width
-        commandField.addActionListener( new ActionListener() {
-            public void actionPerformed(ActionEvent event) {
-                //generate( ((JTextField) event.getSource()).getText() );
-            }
-        } );
+        commandField.addActionListener((event) -> {
+            //generate(((JTextField) event.getSource()).getText());
+        });
         getContentPane().add(commandLinePanel, BorderLayout.CENTER);
 
         //create center pane
@@ -314,24 +306,20 @@ public class Console extends JFrame implements ITitleIndicator {
         fileMenu.insertSeparator(7);
         JMenuItem exit = new JMenuItem("Exit");
         fileMenu.add(exit);
-        newFile.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent event) {
-                docMgr.newFile(DocumentViewer.DEFAULT_NEW_FILENAME);
-            }
-        } );
-        openFile.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent event) {
-                FC.setCurrentDirectory(new File(docMgr.getCurrentViewer().getDirectoryAbsolutePath()));
-                int returnVal = FC.showOpenDialog(Console.this);
+        newFile.addActionListener((event) -> {
+            docMgr.newFile(DocumentViewer.DEFAULT_NEW_FILENAME);
+        });
+        openFile.addActionListener((event) -> {
+            FC.setCurrentDirectory(new File(docMgr.getCurrentViewer().getDirectoryAbsolutePath()));
+            int returnVal = FC.showOpenDialog(Console.this);
 
-                if (returnVal == JFileChooser.APPROVE_OPTION){
-                    File file = FC.getSelectedFile();
-                    
-                    if (file != null)
-                        docMgr.openFile(file.getAbsolutePath());
-                }
+            if (returnVal == JFileChooser.APPROVE_OPTION) {
+                File file = FC.getSelectedFile();
+
+                if (file != null)
+                    docMgr.openFile(file.getAbsolutePath());
             }
-        } );
+        });
         saveFile.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent event) {
                 docMgr.saveFile();
@@ -425,7 +413,7 @@ public class Console extends JFrame implements ITitleIndicator {
                 String licenseKey = "";
                 
                 try {
-                    licenseKey = FileUtility.readFile(licenseFile);
+                    licenseKey = FileUtility.readFile(consoleConfig.getLicenseFile());
                     
                     JOptionPane.showMessageDialog(Console.this,
                         PRODUCT_NAME + " by " + COMPANY_NAME + "\n\n" + licenseKey,
@@ -434,7 +422,7 @@ public class Console extends JFrame implements ITitleIndicator {
                     
                 } catch (IOException ex) {
                     JOptionPane.showMessageDialog(Console.this,                            
-                        "Problem reading license key from " + licenseFile,
+                        "Problem reading license key from " + consoleConfig.getLicenseFile(),
                         "License File Error",
                         JOptionPane.ERROR_MESSAGE);
                 }                                        

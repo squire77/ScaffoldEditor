@@ -4,11 +4,9 @@ import com.pd.modelcg.console.application.Console;
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.ConfigurableApplicationContext;
-import org.springframework.context.annotation.ComponentScan;
 
 import javax.swing.*;
 
-@ComponentScan(basePackages = "com.pd")
 public class ModelCGApplication {
 
     public static void main(String[] args) {
