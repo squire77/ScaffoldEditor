@@ -9,7 +9,6 @@ public class ConsoleConfig {
     private final String mostRecentProject;
     private final String licenseFile;
 
-
     public ConsoleConfig(
             @Value("${project.recent:C:/GitHub/ScaffoldEditor/projects/MyProject/MyProject.csv}")
             String mostRecentProject,
@@ -20,11 +19,11 @@ public class ConsoleConfig {
         this.licenseFile = licenseFile;
     }
 
-    public String getMostRecentProject() {
+    String getMostRecentProject() {
         return mostRecentProject;
     }
 
-    public String getLicenseFile() {
+    String getLicenseFile() {
         return licenseFile;
     }
 }

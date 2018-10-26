@@ -4,8 +4,11 @@ import com.pd.modelcg.console.docviewer.TextDocumentViewer;
 
 import javax.swing.*;
 
-
 public class ErrorDialog {
+
+    private static ErrorDialog instance = null;
+    private TextDocumentViewer logs;
+
     public static ErrorDialog getInstance() {
         if (null == instance)
             instance = new ErrorDialog();
@@ -16,7 +19,7 @@ public class ErrorDialog {
         this.logs = new TextDocumentViewer(null);
     }
 
-    public TextDocumentViewer getLogViewer() {
+    TextDocumentViewer getLogViewer() {
         return logs;
     }
 
@@ -36,7 +39,4 @@ public class ErrorDialog {
         logs.setText("");
         ex.printStackTrace(logs.getPrintWriter());
     }
-
-    private static ErrorDialog instance = null;
-    private TextDocumentViewer logs;
 }

@@ -17,8 +17,6 @@ import org.springframework.stereotype.Component;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.Toolkit;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 import java.io.File;
@@ -42,6 +40,29 @@ public class Console extends JFrame implements ITitleIndicator {
     private static final org.slf4j.Logger log = org.slf4j.LoggerFactory.getLogger(Console.class);
 
     private final ConsoleConfig consoleConfig;
+
+    private static final String         COMPANY_NAME = "Pluggable Design Software";
+    private static final String         PRODUCT_NAME = Character.toString((char) 169) + " UML Simple CodeGen Assistant";
+
+    private static final String         FRAME_TITLE = "Scaffold Editor";
+    private static final int            DEFAULT_FRAME_SIZE_WIDTH = 800;
+    private static final int            DEFAULT_FRAME_SIZE_HEIGHT = 690;
+    private static final JLabel         STATUS_LABEL = new JLabel();
+    private static final JFileChooser   FC = new JFileChooser();
+
+    private TextDocumentViewer startViewer;
+    private ModelDocumentViewer graphicalModelViewer;
+    private TextDocumentViewer templateViewer;
+    private TextDocumentViewer generatedCodeViewer;
+    private TextDocumentViewer logViewer;
+
+    private ProjectData         projectData;
+    private ScriptConnector     scriptConn = new ScriptConnector();
+    private IDocumentManager    docMgr;
+    private JSplitPane          centerPane;
+    private boolean             validLicense;
+    private JPanel              commandLinePanel;
+    private JTextField          commandField;
 
     public Console(ConsoleConfig consoleConfig) {
         super(FRAME_TITLE);
@@ -306,9 +327,7 @@ public class Console extends JFrame implements ITitleIndicator {
         fileMenu.insertSeparator(7);
         JMenuItem exit = new JMenuItem("Exit");
         fileMenu.add(exit);
-        newFile.addActionListener((event) -> {
-            docMgr.newFile(DocumentViewer.DEFAULT_NEW_FILENAME);
-        });
+        newFile.addActionListener((event) -> docMgr.newFile(DocumentViewer.DEFAULT_NEW_FILENAME));
         openFile.addActionListener((event) -> {
             FC.setCurrentDirectory(new File(docMgr.getCurrentViewer().getDirectoryAbsolutePath()));
             int returnVal = FC.showOpenDialog(Console.this);
@@ -320,65 +339,49 @@ public class Console extends JFrame implements ITitleIndicator {
                     docMgr.openFile(file.getAbsolutePath());
             }
         });
-        saveFile.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent event) {
-                docMgr.saveFile();
-            }
-        } );
-        saveFileAs.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent event) {
-                FC.setCurrentDirectory(new File(docMgr.getCurrentViewer().getDirectoryAbsolutePath()));
-                int returnVal = FC.showSaveDialog(Console.this);
+        saveFile.addActionListener((event) -> docMgr.saveFile());
+        saveFileAs.addActionListener((event) -> {
+            FC.setCurrentDirectory(new File(docMgr.getCurrentViewer().getDirectoryAbsolutePath()));
+            int returnVal = FC.showSaveDialog(Console.this);
 
-                if (returnVal == JFileChooser.APPROVE_OPTION){
-                    File file = FC.getSelectedFile();
+            if (returnVal == JFileChooser.APPROVE_OPTION) {
+                File file = FC.getSelectedFile();
 
-                    if (file != null) {
-                        docMgr.saveFileAs(file.getAbsolutePath());
-                        
-                        //update file explorers to show new files got added
-                        docMgr.refreshDirectories();
-                    }
+                if (file != null) {
+                    docMgr.saveFileAs(file.getAbsolutePath());
+
+                    //update file explorers to show new files got added
+                    docMgr.refreshDirectories();
                 }
             }
-        } );
-        exit.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent event) {
-                docMgr.saveAllChanges(true);
-                dispose();
-                System.exit(0);
-            }
-        } );
+        });
+        exit.addActionListener((event) -> {
+            docMgr.saveAllChanges(true);
+            dispose();
+            System.exit(0);
+        });
 
         //"Model" menu
         JMenu modelMenu = new JMenu("Model");
         JMenuItem addClass = new JMenuItem("Add Class");
         modelMenu.add(addClass);
-        addClass.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent event) {
-                graphicalModelViewer.getUMLCanvas().addUMLClass(false, 200, 400);
-            }
-        } );
+        addClass.addActionListener((event) ->
+            graphicalModelViewer.getUMLCanvas().addUMLClass(false, 200, 400));
         JMenuItem addInterface = new JMenuItem("Add Interface");
         modelMenu.add(addInterface);
-        addInterface.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent event) {
-                graphicalModelViewer.getUMLCanvas().addUMLClass(true, 200, 400);
-            }
-        } );
+        addInterface.addActionListener((event) ->
+            graphicalModelViewer.getUMLCanvas().addUMLClass(true, 200, 400));
 				
         //"Generate" menu
         JMenu generateMenu = new JMenu("Generate");
         JMenuItem generateCode = new JMenuItem("Generate Code");
         generateMenu.add(generateCode);
-        generateCode.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent event) {
-                generate();
-                
-                //update file explorers in case new files got added
-                docMgr.refreshDirectories();
-            }
-        } );
+        generateCode.addActionListener((event) -> {
+            generate();
+
+            //update file explorers in case new files got added
+            docMgr.refreshDirectories();
+        });
 
         //"Help" menu
         JMenu helpMenu = new JMenu( "Help" );
@@ -388,46 +391,38 @@ public class Console extends JFrame implements ITitleIndicator {
         helpMenu.add(clicheHelp);
         helpMenu.add(classHelp);
         helpMenu.add(projectHelp);
-        clicheHelp.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent event) {
-                startViewer.openFile("C:/GitHub/ScaffoldEditor/console/src/main/resources/data/help/cliche_help.txt");
-            }
-        } );
-        classHelp.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent event) {
-                startViewer.openFile("C:\\GitHub\\ScaffoldEditor\\console\\src\\main\\resources/data/help/class_help.txt");
-            }
-        } );
-        projectHelp.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent event) {
-                startViewer.openFile("C:\\GitHub\\ScaffoldEditor\\console\\src\\main\\resources/data/help/project_help.txt");
-            }
-        } );
+        clicheHelp.addActionListener((event) ->
+            startViewer.openFile(
+                    "C:/GitHub/ScaffoldEditor/console/src/main/resources/data/help/cliche_help.txt"));
+        classHelp.addActionListener((event) ->
+            startViewer.openFile(
+                    "C:\\GitHub\\ScaffoldEditor\\console\\src\\main\\resources/data/help/class_help.txt"));
+        projectHelp.addActionListener((event) ->
+            startViewer.openFile(
+                    "C:\\GitHub\\ScaffoldEditor\\console\\src\\main\\resources/data/help/project_help.txt"));
         
         //"About" menu
         JMenu aboutMenu = new JMenu( "About" );
         JMenuItem license = new JMenuItem( "License..." );
         aboutMenu.add(license);
-        license.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent event) {  
-                String licenseKey = "";
-                
-                try {
-                    licenseKey = FileUtility.readFile(consoleConfig.getLicenseFile());
-                    
-                    JOptionPane.showMessageDialog(Console.this,
+        license.addActionListener((event) -> {
+            String licenseKey = "";
+
+            try {
+                licenseKey = FileUtility.readFile(consoleConfig.getLicenseFile());
+
+                JOptionPane.showMessageDialog(Console.this,
                         PRODUCT_NAME + " by " + COMPANY_NAME + "\n\n" + licenseKey,
-                        "License Key",                        
+                        "License Key",
                         JOptionPane.INFORMATION_MESSAGE);
-                    
-                } catch (IOException ex) {
-                    JOptionPane.showMessageDialog(Console.this,                            
+
+            } catch (IOException ex) {
+                JOptionPane.showMessageDialog(Console.this,
                         "Problem reading license key from " + consoleConfig.getLicenseFile(),
                         "License File Error",
                         JOptionPane.ERROR_MESSAGE);
-                }                                        
             }
-        } );        
+        });
         
         //set default start text
         startViewer.openFile("C:/GitHub/ScaffoldEditor/console/src/main/resources/data/help/class_help.txt");
@@ -497,27 +492,4 @@ public class Console extends JFrame implements ITitleIndicator {
 
         generatedCodeViewer.setText(model);
     }
-    
-    private static final String         COMPANY_NAME = "Pluggable Design Software";
-    private static final String         PRODUCT_NAME = Character.toString((char) 169) + " UML Simple CodeGen Assistant";
-    
-    private static final String         FRAME_TITLE = "Scaffold Editor";
-    private static final int            DEFAULT_FRAME_SIZE_WIDTH = 800;
-    private static final int            DEFAULT_FRAME_SIZE_HEIGHT = 690;    
-    private static final JLabel         STATUS_LABEL = new JLabel();
-    private static final JFileChooser   FC = new JFileChooser();
-
-    private TextDocumentViewer startViewer;
-    private ModelDocumentViewer graphicalModelViewer;
-    private TextDocumentViewer templateViewer;
-    private TextDocumentViewer generatedCodeViewer;
-    private TextDocumentViewer logViewer;
-
-    private ProjectData         projectData;    
-	private ScriptConnector     scriptConn = new ScriptConnector();
-    private IDocumentManager    docMgr;
-    private JSplitPane          centerPane;
-    private boolean             validLicense;
-	private JPanel              commandLinePanel;
-    private JTextField          commandField;
 }

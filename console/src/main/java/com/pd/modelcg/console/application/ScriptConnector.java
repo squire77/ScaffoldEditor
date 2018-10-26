@@ -7,8 +7,11 @@ import groovy.util.ResourceException;
 import groovy.util.ScriptException;
 
 public class ScriptConnector {
-    // e.g., "groovy"
-    public ScriptConnector() {
+
+    private GroovyScriptEngine gse;
+    private Binding            binding;
+
+    ScriptConnector() {
         try {
             this.gse = new GroovyScriptEngine("");
         } catch (IOException ioe) {
@@ -92,7 +95,4 @@ public class ScriptConnector {
             output.append("\n");
         }
     }
-
-    private GroovyScriptEngine gse;
-    private Binding            binding;
-}        
+}

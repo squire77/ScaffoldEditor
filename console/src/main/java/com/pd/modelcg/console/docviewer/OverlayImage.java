@@ -1,4 +1,4 @@
-package com.pd.modelcg.console.application;
+package com.pd.modelcg.console.docviewer;
 
 import com.pd.modelcg.codegen.graphics.draggablecanvas.DraggableCanvas;
 
@@ -6,6 +6,12 @@ import java.awt.*;
 import javax.swing.*;
 
 public class OverlayImage extends JViewport {
+
+    private static double SIN_30 = 0.5;
+    private static double COS_30 = 0.866;
+    private static int CENTER_X = 400;
+    private static int CENTER_Y = 300;
+
     @Override
     public void paintChildren(Graphics g) {
         super.paintChildren(g);
@@ -42,9 +48,4 @@ public class OverlayImage extends JViewport {
     public void point(int x, int y, int z) {
         line(x,y,z,x,y,z);
     }
-
-    private static double SIN_30 = 0.5;
-    private static double COS_30 = 0.866;
-    private static int CENTER_X = 400;
-    private static int CENTER_Y = 300;
 }

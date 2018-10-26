@@ -1,6 +1,5 @@
 package com.pd.modelcg.console.docviewer;
 
-import com.pd.modelcg.console.application.OverlayImage;
 import com.pd.modelcg.console.canvasext.UMLCanvas;
 
 import javax.swing.JComponent;
