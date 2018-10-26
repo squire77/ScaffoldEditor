@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:cmClass xmlns:ns2="test.modeling.uml.basic.cm">
+    <name>MyAssoc</name>
+    <visibilityKind>0</visibilityKind>
+    <ID>TYPE_4</ID>
+    <packageID>PACKAGE_2</packageID>
+    <isInterface>false</isInterface>
+    <abstract>false</abstract>
+    <finalSpecialization>false</finalSpecialization>
+    <superClasseIDs/>
+    <ownedOperations/>
+    <ownedAttributes>
+        <ownedAttributes>
+            <name>attr1</name>
+            <visibilityKind>1</visibilityKind>
+            <typeID>TYPE_Integer</typeID>
+            <static>false</static>
+            <readOnly>false</readOnly>
+            <composite>false</composite>
+            <derived>false</derived>
+            <isID>false</isID>
+        </ownedAttributes>
+        <ownedAttributes>
+            <name>attr2</name>
+            <visibilityKind>1</visibilityKind>
+            <typeID>TYPE_Integer</typeID>
+            <static>false</static>
+            <readOnly>false</readOnly>
+            <composite>false</composite>
+            <derived>false</derived>
+            <isID>false</isID>
+        </ownedAttributes>
+    </ownedAttributes>
+</ns2:cmClass>

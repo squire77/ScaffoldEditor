@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:cmClass xmlns:ns2="test.modeling.uml.basic.cm">
+    <name>MyClass</name>
+    <visibilityKind>0</visibilityKind>
+    <ID>TYPE_1</ID>
+    <packageID>PACKAGE_2</packageID>
+    <isInterface>false</isInterface>
+    <abstract>false</abstract>
+    <finalSpecialization>false</finalSpecialization>
+    <superClasseIDs>
+        <superClassID>TYPE_2</superClassID>
+    </superClasseIDs>
+    <ownedOperations>
+        <operation>
+            <name>method1</name>
+            <visibilityKind>0</visibilityKind>
+            <typeID>TYPE_Void</typeID>
+            <abstract>false</abstract>
+            <static>false</static>
+            <finalSpecialization>false</finalSpecialization>
+            <parameters/>
+            <exceptions/>
+        </operation>
+    </ownedOperations>
+    <ownedAttributes/>
+</ns2:cmClass>
