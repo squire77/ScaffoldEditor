@@ -2,6 +2,7 @@ package com.pd.modelcg.console.canvasext;
 
 import com.pd.modelcg.codegen.graphics.draggablecanvas.DraggableCanvas;
 import com.pd.modelcg.codegen.graphics.draggablecanvas.Grid;
+import com.pd.modelcg.codegen.graphics.draggablecanvas.IDraggableCanvas;
 import com.pd.modelcg.codegen.graphics.graphcanvas.Graph;
 import com.pd.modelcg.codegen.graphics.graphcanvas.Node;
 import com.pd.modelcg.codegen.model.uml.basic.UmlPackage;
@@ -89,7 +90,7 @@ public class UMLPackageNode extends UMLNode {
     }
     
     @Override
-    public void remove(DraggableCanvas canvas) {
+    public void remove(IDraggableCanvas canvas) {
         super.remove(canvas);    
     
         //remove from model        

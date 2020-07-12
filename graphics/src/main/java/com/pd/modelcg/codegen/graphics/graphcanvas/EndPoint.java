@@ -1,9 +1,9 @@
 package com.pd.modelcg.codegen.graphics.graphcanvas;
 
 import com.pd.modelcg.codegen.graphics.draggablecanvas.Draggable;
-import com.pd.modelcg.codegen.graphics.draggablecanvas.DraggableCanvas;
 import com.pd.modelcg.codegen.graphics.draggablecanvas.Grid;
-import com.pd.modelcg.codegen.graphics.draggablecanvas.LinesIntersect;
+import com.pd.modelcg.codegen.graphics.algorithms.LinesIntersect;
+import com.pd.modelcg.codegen.graphics.draggablecanvas.IDraggableCanvas;
 
 import java.awt.*;
 import java.awt.event.MouseEvent;
@@ -82,12 +82,12 @@ abstract public class EndPoint extends Draggable {
     } 
     
     //prevent canvas popup from removing endpoints without removing the link
-    public void removeEndPoint(DraggableCanvas canvas) {
+    public void removeEndPoint(IDraggableCanvas canvas) {
         super.remove(canvas);
     }
     
     @Override
-    public void remove(DraggableCanvas canvas) { 
+    public void remove(IDraggableCanvas canvas) {
         link.remove(canvas);
     }
 
@@ -135,7 +135,7 @@ abstract public class EndPoint extends Draggable {
             setLocationByXY(getPosition().x, getPosition().y);
         } else {
             //find new node to move to
-            Node n = canvas.getNodeAtPosition(getPosition().x, getPosition().y);
+            Node n = canvas.getFrontMostAtPosition(getPosition().x, getPosition().y);
             Node other = link.getOtherEndPoint(this).getNode();
 
             if (n  != null && relocateToNode(node, n, other)) {

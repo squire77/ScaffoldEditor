@@ -3,6 +3,7 @@ package com.pd.modelcg.codegen.graphics.graphcanvas;
 import com.pd.modelcg.codegen.graphics.draggablecanvas.Draggable;
 import com.pd.modelcg.codegen.graphics.draggablecanvas.DraggableCanvas;
 import com.pd.modelcg.codegen.graphics.draggablecanvas.Grid;
+import com.pd.modelcg.codegen.graphics.draggablecanvas.IDraggableCanvas;
 
 import java.awt.*;
 import java.awt.event.MouseEvent;
@@ -75,7 +76,7 @@ public class Link extends Draggable {
     }
     
     @Override
-    public void remove(DraggableCanvas canvas) {
+    public void remove(IDraggableCanvas canvas) {
         ep1.removeEndPoint(canvas);
         ep2.removeEndPoint(canvas);
         

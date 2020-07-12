@@ -1,5 +1,7 @@
 package com.pd.modelcg.codegen.graphics.draggablecanvas;
 
+import com.pd.modelcg.codegen.graphics.canvas.Drawable;
+
 import java.awt.*;
 import java.awt.event.MouseEvent;
 

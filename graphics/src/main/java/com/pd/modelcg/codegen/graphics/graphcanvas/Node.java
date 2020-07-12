@@ -1,9 +1,6 @@
 package com.pd.modelcg.codegen.graphics.graphcanvas;
 
-import com.pd.modelcg.codegen.graphics.draggablecanvas.Draggable;
-import com.pd.modelcg.codegen.graphics.draggablecanvas.DraggableCanvas;
-import com.pd.modelcg.codegen.graphics.draggablecanvas.Grid;
-import com.pd.modelcg.codegen.graphics.draggablecanvas.IDraggable;
+import com.pd.modelcg.codegen.graphics.draggablecanvas.*;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -26,7 +23,7 @@ public class Node extends Draggable {
     }    
     
     @Override
-    public void remove(DraggableCanvas canvas) {
+    public void remove(IDraggableCanvas canvas) {
         //remove all links
         while (!endPoints.isEmpty()) {
             endPoints.get(0).link.remove(canvas);

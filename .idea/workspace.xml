@@ -2,16 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29a698ff-d09a-421a-8480-11c531508002" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/canvas/DrawingCanvas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/canvas/ZBuffer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/IDraggableCanvas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/application/Console.java" beforeDir="false" afterPath="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/application/Console.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/application/ConsoleConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/application/ConsoleConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/application/ErrorDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/application/ErrorDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/application/LicenseValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/application/LicenseValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/application/OverlayImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/docviewer/OverlayImage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/application/ProjectData.java" beforeDir="false" afterPath="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/application/ProjectData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/application/ScriptConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/application/ScriptConnector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/docviewer/ModelDocumentViewer.java" beforeDir="false" afterPath="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/docviewer/ModelDocumentViewer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/MyProject/MyProject.csv" beforeDir="false" afterPath="$PROJECT_DIR$/projects/MyProject/MyProject.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/console/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/console/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/canvasext/UMLClassNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/canvasext/UMLClassNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/canvasext/UMLLink.java" beforeDir="false" afterPath="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/canvasext/UMLLink.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/canvasext/UMLPackageNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/canvasext/UMLPackageNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/docviewer/OverlayImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/docviewer/OverlayImage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/Draggable.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/Draggable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/DraggableCanvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/DraggableCanvas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/Drawable.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/canvas/Drawable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/IDraggable.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/IDraggable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/IDrawable.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/canvas/IDrawable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/IMousable.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/IMousable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/ISelectable.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/ISelectable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/LinesIntersect.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/algorithms/LinesIntersect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/PolygonSplit.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/algorithms/PolygonSplit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/Primitives.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/algorithms/Primitives.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/Selectable.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/Selectable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/graphcanvas/Adornment.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/graphcanvas/Adornment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/graphcanvas/EndPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/graphcanvas/EndPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/graphcanvas/GraphCanvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/graphcanvas/GraphCanvas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/graphcanvas/Link.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/graphcanvas/Link.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/graphcanvas/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/graphcanvas/Node.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,103 +57,30 @@
     <expand />
     <select />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-1895384528">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="4" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.14" value="1" />
-          <entry key="project.open.time.5" value="1" />
-          <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="4" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="form" value="1" />
-          <entry key="java" value="212" />
-          <entry key="properties" value="3" />
-          <entry key="txt" value="1" />
-          <entry key="xml" value="23" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="GUI_DESIGNER_FORM" value="1" />
-          <entry key="JAVA" value="212" />
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Properties" value="3" />
-          <entry key="XML" value="23" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="dummy" value="19" />
-          <entry key="java" value="996" />
-          <entry key="properties" value="107" />
-          <entry key="xml" value="31" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="996" />
-          <entry key="PLAIN_TEXT" value="19" />
-          <entry key="Properties" value="107" />
-          <entry key="XML" value="31" />
-        </counts>
-      </usages-collector>
-    </session>
-    <session id="-797795866">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="4" />
-          <entry key="project.open.time.1" value="4" />
-          <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="5" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="class" value="1" />
-          <entry key="java" value="10" />
-          <entry key="md" value="1" />
-          <entry key="properties" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="10" />
-          <entry key="Markdown" value="1" />
-          <entry key="Properties" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="dummy" value="13" />
-          <entry key="java" value="874" />
-          <entry key="md" value="324" />
-          <entry key="properties" value="45" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="874" />
-          <entry key="Markdown" value="324" />
-          <entry key="PLAIN_TEXT" value="13" />
-          <entry key="Properties" value="45" />
-        </counts>
-      </usages-collector>
-    </session>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/application/ConsoleConfig.java">
+        <entry file="file://$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/Draggable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+            <state relative-caret-position="53">
+              <caret line="5" column="38" lean-forward="true" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+              <folding>
+                <element signature="e#789#790#0" expanded="true" />
+                <element signature="e#830#831#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/Selectable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="675">
+              <caret line="46" column="48" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -145,77 +89,58 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/application/ErrorDialog.java">
+        <entry file="file://$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/ISelectable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="85">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/application/LicenseValidator.java">
+        <entry file="file://$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/DraggableCanvas.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/docviewer/OverlayImage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/docviewer/ModelDocumentViewer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
+            <state relative-caret-position="1394">
+              <caret line="82" column="5" lean-forward="true" selection-start-line="82" selection-start-column="5" selection-end-line="82" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/application/ScriptConnector.java">
+        <entry file="file://$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/canvas/DrawingCanvas.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/application/Console.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="71" selection-start-line="71" selection-end-line="71" />
+            <state relative-caret-position="884">
+              <caret line="62" column="18" lean-forward="true" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
               <folding>
-                <element signature="e#18520#18521#0" expanded="true" />
-                <element signature="e#18559#18560#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#736#737#0" expanded="true" />
+                <element signature="e#791#792#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/application/ProjectData.java">
+        <entry file="file://$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/graphcanvas/GraphCanvas.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+            <state relative-caret-position="140">
+              <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+              <folding>
+                <element signature="e#668#669#0" expanded="true" />
+                <element signature="e#734#735#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/console/src/main/resources/application.properties">
+        <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/canvasext/UMLClassNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="4" column="58" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
+            <state relative-caret-position="105">
+              <caret line="88" selection-start-line="88" selection-end-line="88" />
             </state>
           </provider>
         </entry>
@@ -241,7 +166,20 @@
       <find>.tem</find>
       <find>mostRecentProject</find>
       <find>licenseFile</find>
+      <find>main</find>
+      <find>image</find>
+      <find>removeObj</find>
+      <find>IDra</find>
+      <find>DraggableCanvas2</find>
+      <find>DraggableCanvas</find>
+      <find>disable</find>
+      <find>BACKGROUND_COLOR</find>
     </findStrings>
+    <replaceStrings>
+      <replace>zBuffer</replace>
+      <replace>DraggableCanvas</replace>
+      <replace>DraggableCanvas3</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -249,33 +187,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/fileexplorer/IFileOpener.java" />
-        <option value="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/fileexplorer/FileExplorer.java" />
-        <option value="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/docviewer/IDocumentViewer.java" />
-        <option value="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/docviewer/ModelDocumentViewer.java" />
-        <option value="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/docviewer/TemplateViewer.java" />
-        <option value="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/docviewer/TextDocumentPrintWriter.java" />
-        <option value="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/docviewer/DocumentViewer.java" />
-        <option value="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/docviewer/TextDocumentViewer.java" />
-        <option value="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/canvasext/form/ButtonEditor.java" />
-        <option value="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/canvasext/form/ButtonRenderer.java" />
-        <option value="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/canvasext/form/UMLAggregationForm.java" />
-        <option value="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/canvasext/form/UMLAssociationForm.java" />
-        <option value="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/canvasext/form/UMLClassForm.java" />
-        <option value="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/canvasext/form/UMLParametersForm.java" />
-        <option value="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/canvasext/LinkToAdornment.java" />
-        <option value="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/canvasext/UMLNode.java" />
-        <option value="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/canvasext/UMLPackageNode.java" />
-        <option value="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/canvasext/UMLLink.java" />
-        <option value="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/canvasext/UMLEndPoint.java" />
-        <option value="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/canvasext/UMLCanvas.java" />
-        <option value="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/canvasext/UMLAssociationLink.java" />
-        <option value="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/canvasext/UMLInheritanceLink.java" />
-        <option value="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/canvasext/UMLAggregationLink.java" />
-        <option value="$PROJECT_DIR$/codegen/src/main/java/com/pd/modelcg/codegen/FileUtility.java" />
         <option value="$PROJECT_DIR$/codegen/src/main/java/com/pd/modelcg/codegen/Text.java" />
         <option value="$PROJECT_DIR$/codegen/src/main/java/com/pd/modelcg/codegen/CmGenerator.java" />
-        <option value="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/canvasext/UMLClassNode.java" />
         <option value="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/canvasext/ResizeAdornment.java" />
         <option value="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/codegenui/GeneratorEditorPanel.java" />
         <option value="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/docmanager/IDocumentManager.java" />
@@ -285,7 +198,6 @@
         <option value="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/codegenui/GeneratorTypeListPanel.java" />
         <option value="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/application/AppFrame.java" />
         <option value="$PROJECT_DIR$/model/pom.xml" />
-        <option value="$PROJECT_DIR$/console/pom.xml" />
         <option value="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/application/AppRunner.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/README.md" />
@@ -297,9 +209,35 @@
         <option value="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/application/ScriptConnector.java" />
         <option value="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/application/OverlayImage.java" />
         <option value="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/application/ErrorDialog.java" />
-        <option value="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/application/Console.java" />
         <option value="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/application/ProjectData.java" />
+        <option value="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/application/Console.java" />
+        <option value="$PROJECT_DIR$/console/pom.xml" />
+        <option value="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/Drawable.java" />
+        <option value="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/PolygonSplit.java" />
+        <option value="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/algorithms/Primitives.java" />
+        <option value="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/IDraggableCanvas.java" />
+        <option value="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/graphcanvas/Link.java" />
+        <option value="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/graphcanvas/EndPoint.java" />
+        <option value="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/graphcanvas/Node.java" />
+        <option value="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/canvasext/UMLClassNode.java" />
+        <option value="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/canvasext/UMLLink.java" />
+        <option value="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/canvasext/UMLPackageNode.java" />
         <option value="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/docviewer/OverlayImage.java" />
+        <option value="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/canvas/Canvas.java" />
+        <option value="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/canvas/ZBuffer.java" />
+        <option value="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/canvas/PDCanvas.java" />
+        <option value="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/canvas/Drawable.java" />
+        <option value="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/IDraggable.java" />
+        <option value="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/Draggable.java" />
+        <option value="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/IMousable.java" />
+        <option value="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/ISelectable.java" />
+        <option value="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/DraggableCanvas2.java" />
+        <option value="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/graphcanvas/GraphCanvas.java" />
+        <option value="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/canvas/DrawingCanvas3.java" />
+        <option value="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/DraggableCanvas3.java" />
+        <option value="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/canvas/DrawingCanvas.java" />
+        <option value="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/Selectable.java" />
+        <option value="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/DraggableCanvas.java" />
       </list>
     </option>
   </component>
@@ -313,6 +251,7 @@
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
       </MavenImportingSettings>
     </option>
   </component>
@@ -321,12 +260,26 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="codegen" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="codegen" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="console" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="console" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="console" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
@@ -353,9 +306,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -371,60 +323,67 @@
             <path>
               <item name="ScaffoldEditor" type="b2602c69:ProjectViewProjectNode" />
               <item name="ScaffoldEditor" type="462c0819:PsiDirectoryNode" />
-              <item name="console" type="462c0819:PsiDirectoryNode" />
+              <item name="graphics" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ScaffoldEditor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ScaffoldEditor" type="462c0819:PsiDirectoryNode" />
+              <item name="graphics" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ScaffoldEditor" type="b2602c69:ProjectViewProjectNode" />
               <item name="ScaffoldEditor" type="462c0819:PsiDirectoryNode" />
-              <item name="console" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ScaffoldEditor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ScaffoldEditor" type="462c0819:PsiDirectoryNode" />
-              <item name="console" type="462c0819:PsiDirectoryNode" />
+              <item name="graphics" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ScaffoldEditor" type="b2602c69:ProjectViewProjectNode" />
               <item name="ScaffoldEditor" type="462c0819:PsiDirectoryNode" />
-              <item name="console" type="462c0819:PsiDirectoryNode" />
+              <item name="graphics" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="console" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ScaffoldEditor" type="b2602c69:ProjectViewProjectNode" />
               <item name="ScaffoldEditor" type="462c0819:PsiDirectoryNode" />
-              <item name="console" type="462c0819:PsiDirectoryNode" />
+              <item name="graphics" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="console" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="graphics" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ScaffoldEditor" type="b2602c69:ProjectViewProjectNode" />
               <item name="ScaffoldEditor" type="462c0819:PsiDirectoryNode" />
-              <item name="console" type="462c0819:PsiDirectoryNode" />
+              <item name="graphics" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="console" type="462c0819:PsiDirectoryNode" />
-              <item name="docviewer" type="462c0819:PsiDirectoryNode" />
+              <item name="graphics" type="462c0819:PsiDirectoryNode" />
+              <item name="canvas" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ScaffoldEditor" type="b2602c69:ProjectViewProjectNode" />
               <item name="ScaffoldEditor" type="462c0819:PsiDirectoryNode" />
-              <item name="console" type="462c0819:PsiDirectoryNode" />
+              <item name="graphics" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="graphics" type="462c0819:PsiDirectoryNode" />
+              <item name="draggablecanvas" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ScaffoldEditor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ScaffoldEditor" type="462c0819:PsiDirectoryNode" />
+              <item name="graphics" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="graphics" type="462c0819:PsiDirectoryNode" />
+              <item name="graphcanvas" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -437,6 +396,7 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540580696955" />
@@ -446,7 +406,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -465,13 +425,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ModelCGApplication">
+  <component name="RunManager" selected="Application.ModelCGApplication">
     <configuration name="AppRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.pd.modelcg.console.application.AppRunner" />
       <module name="console" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.pd.modelcg.console.docviewer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ModelCGApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pd.modelcg.console.ModelCGApplication" />
+      <module name="console" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pd.modelcg.console.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -494,11 +467,11 @@
     </configuration>
     <list>
       <item itemvalue="Application.AppRunner" />
-      <item itemvalue="Spring Boot.ModelCGApplication" />
+      <item itemvalue="Application.ModelCGApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.ModelCGApplication" />
+        <item itemvalue="Application.ModelCGApplication" />
         <item itemvalue="Application.AppRunner" />
       </list>
     </recent_temporary>
@@ -529,10 +502,10 @@
     <option name="totallyTimeSpent" value="28517000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-9" width="1864" height="1098" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28131992" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23298033" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -540,8 +513,8 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32867885" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.44253492" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32569557" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.40589198" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.41245973" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -549,50 +522,20 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.38453275" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32867885" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.38297874" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.23076923" />
       <window_info anchor="bottom" id="Spring" order="12" weight="0.32975295" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Database" order="1" weight="0.32997763" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="8" visible="true" weight="0.22595078" />
+      <window_info anchor="right" id="Maven" order="0" weight="0.2118003" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Database" order="2" weight="0.32997763" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Maven Projects" order="9" visible="true" weight="0.22595078" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27293065" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32867885" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.44253492" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39957035" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.38453275" />
-      <window_info anchor="bottom" id="Messages" order="11" visible="true" weight="0.32867885" />
-      <window_info anchor="bottom" id="Spring" order="12" weight="0.32975295" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Database" order="1" weight="0.32997763" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="8" weight="0.22595078" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -622,9 +565,20 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -645,238 +599,131 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/canvasext/form/ButtonRenderer.java">
+    <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/application/ErrorDialog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="136">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/fileexplorer/IFileOpener.java">
+    <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/application/LicenseValidator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
+        <state relative-caret-position="34">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/docviewer/ModelDocumentViewer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/application/ProjectData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/console/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="58" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/application/Console.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="71" selection-start-line="71" selection-end-line="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="38" selection-start-column="38" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codegen/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/console/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/application/ScriptConnector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/src/main/java/com/pd/modelcg/codegen/model/uml/basic/cm/CmClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/src/main/java/com/pd/modelcg/codegen/model/uml/basic/UmlPackage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/src/main/java/com/pd/modelcg/codegen/model/uml/ClassModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/src/main/java/com/pd/modelcg/codegen/model/uml/UmlConstraint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/src/main/java/com/pd/modelcg/codegen/model/uml/UmlIdentifiable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
           <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/codegen/src/main/java/com/pd/modelcg/codegen/FileUtility.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
+        <state relative-caret-position="-688">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codegen/src/main/java/com/pd/modelcg/codegen/CmGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="308" column="21" selection-start-line="308" selection-start-column="21" selection-end-line="308" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/canvasext/LinkToAdornment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="243" column="19" lean-forward="true" selection-start-line="243" selection-start-column="19" selection-end-line="243" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/canvasext/UMLAggregationLink.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/canvasext/UMLAssociationLink.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/canvasext/UMLCanvas.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="227" column="17" selection-start-line="227" selection-start-column="17" selection-end-line="227" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/canvasext/UMLClassNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="919">
-          <caret line="51" column="40" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/canvasext/UMLEndPoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="156" column="37" selection-start-line="156" selection-start-column="37" selection-end-line="156" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/canvasext/UMLInheritanceLink.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/canvasext/UMLLink.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/canvasext/UMLNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="40" column="60" selection-start-line="40" selection-start-column="60" selection-end-line="40" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/canvasext/UMLPackageNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1108">
-          <caret line="82" column="29" selection-start-line="82" selection-start-column="29" selection-end-line="82" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/canvasext/ResizeAdornment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="29" lean-forward="true" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/codegenui/GeneratorEditorPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="688">
-          <caret line="39" column="40" lean-forward="true" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/docmanager/IDocumentManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/docmanager/ITitleIndicator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/docviewer/IDocumentViewer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/docviewer/ModelTestTextWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/docviewer/TemplateViewer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/src/main/java/com/pd/modelcg/codegen/model/uml/basic/UmlType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/docviewer/TextDocumentPrintWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/fileexplorer/impl/FileSystemModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1008">
-          <caret line="58" column="9" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/fileexplorer/impl/FileSystemTreePanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/codegenui/GeneratorListPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="88" selection-start-line="88" selection-end-line="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/console/src/main/resources/most_recent_project.txt" />
-    <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/codegenui/GeneratorTypeListPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codegen/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/docviewer/TextDocumentViewer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="38" column="24" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/graphics/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/console/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="18" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/application/AppRunner.java" />
-    <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/fileexplorer/FileExplorer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/codegen/src/main/java/com/pd/modelcg/codegen/Text.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
+        <state relative-caret-position="-493">
           <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -884,124 +731,292 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/codegen/src/main/java/com/pd/modelcg/codegen/CmGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+        <state relative-caret-position="-5944">
+          <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/docmanager/DocumentManager.java">
+    <entry file="file://$PROJECT_DIR$/codegen/src/main/java/com/pd/modelcg/codegen/GenTemplates.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1218">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/groovy-2.5.2/lib/groovy-2.5.2.jar!/groovy/util/logging/Slf4j.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="105">
-            <caret line="5" column="41" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="41" />
-          </first_editor>
-          <second_editor />
+        <state relative-caret-position="-558">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/ModelCGApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+        <state relative-caret-position="-308">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/console/src/main/resources/application.properties">
+    <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/canvasext/UMLCanvas.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="58" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
+        <state relative-caret-position="36">
+          <caret line="49" column="35" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/application/LicenseValidator.java">
+    <entry file="file://$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/algorithms/LinesIntersect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/application/ErrorDialog.java">
+    <entry file="file://$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/algorithms/PolygonSplit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/application/ConsoleConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+        <state relative-caret-position="102">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/application/Console.java">
+    <entry file="file://$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/algorithms/Primitives.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
+        <state relative-caret-position="119">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding>
-            <element signature="e#18520#18521#0" expanded="true" />
-            <element signature="e#18559#18560#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/application/ProjectData.java">
+    <entry file="file://$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/IDraggableCanvas.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+        <state relative-caret-position="51">
+          <caret line="3" column="41" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/graphcanvas/Link.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="78" column="16" selection-start-line="78" selection-start-column="16" selection-end-line="78" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/graphcanvas/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/canvasext/UMLLink.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="78" column="12" selection-start-line="78" selection-start-column="12" selection-end-line="78" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/canvasext/UMLPackageNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="92" column="19" selection-start-line="92" selection-start-column="19" selection-end-line="92" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="260" column="12" selection-start-line="260" selection-start-column="12" selection-end-line="260" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/awt/image/BufferedImage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="67" column="13" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/docviewer/OverlayImage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        <state>
+          <caret column="41" selection-start-column="41" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1460#1461#0" expanded="true" />
+            <element signature="e#1493#1494#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/docviewer/DocumentViewer.java">
+    <entry file="file://$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/canvas/ZBuffer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        <state relative-caret-position="105">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/docviewer/ModelDocumentViewer.java">
+    <entry file="file://$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/graphcanvas/EndPoint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
+        <state>
+          <caret lean-forward="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/application/ScriptConnector.java">
+    <entry file="file://$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/canvas/IDrawable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        <state relative-caret-position="-141">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/awt/event/MouseListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="72" column="16" selection-start-line="72" selection-start-column="16" selection-end-line="72" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/IMousable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="15" lean-forward="true" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/IDraggable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/graphcanvas/NodeWithAdornments.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="62" column="14" selection-start-line="62" selection-start-column="14" selection-end-line="62" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/Draggable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="5" column="38" lean-forward="true" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+          <folding>
+            <element signature="e#789#790#0" expanded="true" />
+            <element signature="e#830#831#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/ISelectable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/awt/Component.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="8075" column="16" selection-start-line="8075" selection-start-column="16" selection-end-line="8075" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/graphcanvas/GraphCanvas.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+          <folding>
+            <element signature="e#668#669#0" expanded="true" />
+            <element signature="e#734#735#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/canvas/DrawingCanvas3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="9" column="40" lean-forward="true" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#680#681#0" expanded="true" />
+            <element signature="e#735#736#0" expanded="true" />
+            <element signature="e#1437#1438#0" expanded="true" />
+            <element signature="e#1475#1476#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/DraggableCanvas3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="60" column="26" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#15516#15517#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/canvas/Drawable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="70" column="17" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2058#2059#0" expanded="true" />
+            <element signature="e#2101#2102#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/canvasext/UMLClassNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/Selectable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="46" column="48" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/DraggableCanvas.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1394">
+          <caret line="82" column="5" lean-forward="true" selection-start-line="82" selection-start-column="5" selection-end-line="82" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/canvas/DrawingCanvas.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="62" column="18" lean-forward="true" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#736#737#0" expanded="true" />
+            <element signature="e#791#792#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

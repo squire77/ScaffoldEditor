@@ -1,6 +1,6 @@
 package com.pd.modelcg.codegen.graphics.graphcanvas;
 
-import com.pd.modelcg.codegen.graphics.draggablecanvas.Primitives;
+import com.pd.modelcg.codegen.graphics.algorithms.Primitives;
 
 import java.awt.*;
 import java.awt.event.MouseEvent;

@@ -2,7 +2,8 @@ package com.pd.modelcg.codegen.graphics.draggablecanvas;
 
 import java.awt.event.MouseEvent;
 
-public interface IMousable {
+public interface IMousable
+{
     void mouseEntered(MouseEvent event);
     void mouseMoved(MouseEvent event);
     void mouseExited(MouseEvent event);

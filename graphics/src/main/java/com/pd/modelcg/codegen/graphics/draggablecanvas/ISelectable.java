@@ -2,7 +2,8 @@ package com.pd.modelcg.codegen.graphics.draggablecanvas;
 
 import java.awt.*;
 
-public interface ISelectable extends IMousable {
+public interface ISelectable extends IMousable
+{
     boolean isSelected();
     void select();
     void unselect();

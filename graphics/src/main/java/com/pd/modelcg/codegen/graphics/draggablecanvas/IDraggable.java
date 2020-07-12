@@ -2,10 +2,13 @@ package com.pd.modelcg.codegen.graphics.draggablecanvas;
 
 import java.awt.event.MouseEvent;
 
-public interface IDraggable extends ISelectable, IDrawable {
+import com.pd.modelcg.codegen.graphics.canvas.IDrawable;
+
+public interface IDraggable extends ISelectable, IDrawable
+{
     boolean validate(int deltaX, int deltaY, int width, int height);
     void snapToGrid(Grid grid);
-    void remove(DraggableCanvas canvas);
+    void remove(IDraggableCanvas canvas);
 
     //this indicates whether to treat the object as stand-alone or part of a group
     boolean isDepthLevelOne();

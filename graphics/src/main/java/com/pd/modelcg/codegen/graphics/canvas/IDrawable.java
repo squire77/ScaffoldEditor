@@ -1,4 +1,4 @@
-package com.pd.modelcg.codegen.graphics.draggablecanvas;
+package com.pd.modelcg.codegen.graphics.canvas;
 
 import java.awt.*;
 import java.awt.geom.Rectangle2D;

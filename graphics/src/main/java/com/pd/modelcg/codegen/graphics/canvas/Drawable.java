@@ -1,9 +1,13 @@
-package com.pd.modelcg.codegen.graphics.draggablecanvas;
+package com.pd.modelcg.codegen.graphics.canvas;
 
 import java.awt.*;
 import java.awt.geom.Rectangle2D;
 
-public class Drawable implements IDrawable {
+import com.pd.modelcg.codegen.graphics.algorithms.PolygonSplit;
+import com.pd.modelcg.codegen.graphics.algorithms.Primitives;
+
+public class Drawable implements IDrawable
+{
     public enum DrawType { Default, GeneralPath }
     public static class DrawProperties {}
     public DrawType        drawType;
@@ -21,8 +25,9 @@ public class Drawable implements IDrawable {
     }
 
     //only a subclass can call this constructor, and if it does,
-    //initialize(Polygon) must be called after the contructor is called
-    protected Drawable(DrawType dType, DrawProperties dProps) {
+    //initialize(Polygon) must be called after the constructor is called
+    protected Drawable(DrawType dType, DrawProperties dProps)
+    {
         init(null, DrawType.Default, new DrawProperties());
     }
 

@@ -7,16 +7,46 @@ import java.awt.event.*;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 
-public class DraggableCanvas  extends JPanel implements MouseWheelListener, MouseInputListener {
+import com.pd.modelcg.codegen.graphics.canvas.ZBuffer;
+
+public class DraggableCanvas extends JPanel implements IDraggableCanvas, MouseWheelListener, MouseInputListener
+{
     final public static Color BACKGROUND_COLOR = Color.lightGray;
+    final static float DASH[] = {10.0f};
+    final static BasicStroke DASHED_STROKE = new BasicStroke(1.0f,
+            BasicStroke.CAP_BUTT,
+            BasicStroke.JOIN_MITER,
+            10.0f, DASH, 0.0f);
 
-    public static BufferedImage image = null;
+    private BufferedImage                   image;
 
-    public DraggableCanvas() {
-        this.disableDrawing = false;
+    private Color                           backgroundColor;
 
-        this.savedSelection = new ArrayList<IDraggable>();
-        this.groupSelection = new ArrayList<IDraggable>();
+    protected PopupMenu                     objectPopup;
+    protected PopupMenu                     backgroundPopup;
+    protected PopupMenu                     groupSelectionPopup;
+
+    protected java.util.List<IDraggable>    savedSelection;
+    protected java.util.List<IDraggable>    groupSelection;
+    protected boolean                       groupSelectionEnabled;
+    protected boolean                       groupSelectionActive;
+    protected Rectangle                     groupSelectionBounds;
+    protected Point                         groupSelectionStart;
+    protected Point                         groupSelectionEnd;
+
+    protected Point startPos;
+    protected IDraggable                    selection;
+    protected int                           width;
+    protected int                           height;
+    protected Grid                          grid;
+
+    protected ZBuffer<IDraggable>           zBuffer;
+
+    public DraggableCanvas()
+    {
+        this.backgroundColor = BACKGROUND_COLOR;
+        this.savedSelection = new ArrayList<>();
+        this.groupSelection = new ArrayList<>();
         this.groupSelectionEnabled = false;
         this.groupSelectionBounds = new Rectangle();
         this.groupSelectionStart = new Point();
@@ -27,19 +57,17 @@ public class DraggableCanvas  extends JPanel implements MouseWheelListener, Mous
         this.width = screenDim.width;
         this.height = screenDim.height;
 
-        //create the image
-        DraggableCanvas.image = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
+        this.image = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
 
-        //create a background grid
         this.grid = new Grid(width, height);
         this.grid.snapToGrid(true); //enable snap to grid
         this.grid.showGrid(true); //enable show grid
         this.selection = null;
-        this.zBuffer = new ArrayList<IDraggable>();
+        this.zBuffer = new ZBuffer<>();
     }
 
     //must be called after calling constructor
-    //also, call drawObjects() paint the background and optional grid
+    //also, call drawObjects() to paint the background and optional grid
     public void init() {
         createObjectPopupMenu();
         createBackgroundPopupMenu();
@@ -50,17 +78,8 @@ public class DraggableCanvas  extends JPanel implements MouseWheelListener, Mous
     }
 
     public void reset() {
-        this.disableDrawing = false;
         this.selection = null;
-        this.zBuffer = new ArrayList<IDraggable>();
-    }
-
-    //optimize the drawing speed
-    public void disableDrawing() {
-        this.disableDrawing = true;
-    }
-    public void enableDrawing() {
-        this.disableDrawing = false;
+        this.zBuffer.clear();
     }
 
     public int getGridSpacing() {
@@ -71,7 +90,7 @@ public class DraggableCanvas  extends JPanel implements MouseWheelListener, Mous
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
 
-        g.drawImage(image, 0, 0, BACKGROUND_COLOR, null);
+        g.drawImage(image, 0, 0, backgroundColor, null);
 
         if (groupSelectionActive) {
             Graphics2D g2d = (Graphics2D) g;
@@ -105,15 +124,9 @@ public class DraggableCanvas  extends JPanel implements MouseWheelListener, Mous
     }
 
     public void addObject(IDraggable object) {
-        zBuffer.add(object); //add to top of stack
-
-        //draw new object
         object.snapToGrid(grid);
-
-        if (!disableDrawing) {
-            object.draw((Graphics2D)image.getGraphics());
-        }
-
+        zBuffer.add(object);
+        object.draw((Graphics2D)image.getGraphics());
         repaint();
     }
 
@@ -125,56 +138,31 @@ public class DraggableCanvas  extends JPanel implements MouseWheelListener, Mous
     }
 
     final public void drawObjects() {
-        if (!disableDrawing) {
-            Graphics2D g = (Graphics2D)image.getGraphics();
+        Graphics2D g = (Graphics2D)image.getGraphics();
 
-            g.setPaint(BACKGROUND_COLOR);
-            g.fillRect(0, 0, width, height);
+        g.setPaint(backgroundColor);
+        g.fillRect(0, 0, width, height);
 
-            grid.draw(g);
-            doDrawObjects(g);
+        grid.draw(g);
+        doDrawObjects(g);
 
-            if (groupSelectionEnabled) {
-                g.setColor(Color.BLUE);
-                g.setStroke(DASHED_STROKE);
-                g.drawRect(groupSelectionBounds.x, groupSelectionBounds.y,
-                        groupSelectionBounds.width, groupSelectionBounds.height);
-            }
-
-            repaint(); // this is necessary to re-paint the canvas, for example if something gets removed
+        if (groupSelectionEnabled) {
+            g.setColor(Color.BLUE);
+            g.setStroke(DASHED_STROKE);
+            g.drawRect(groupSelectionBounds.x, groupSelectionBounds.y,
+                    groupSelectionBounds.width, groupSelectionBounds.height);
         }
+
+        repaint(); // this is necessary to re-paint the canvas, for example if something gets removed
     }
 
     protected void doDrawObjects(Graphics2D g) {
-        for (IDraggable d: zBuffer) {
-            d.snapToGrid(grid);
-            d.draw(g);
-        }
-    }
-
-    public java.util.List<IDraggable> getAllObjectsAtPosition(int x, int y) {
-        java.util.List<IDraggable> objects = new ArrayList<IDraggable>();
-        for (IDraggable d: zBuffer)
-            if(d.contains(x, y))
-                objects.add(d);
-        return objects;
-    }
-
-    public IDraggable getObjectAtPosition(int x, int y) {
-        // select objects from the top down in the z-buffer (in case they overlap)
-        if(zBuffer.size() > 0) {
-            for(int i=zBuffer.size() - 1; i >= 0; i--) {
-                IDraggable next = zBuffer.get(i);
-                if( next.contains(x, y))
-                    return next;
-            }
-        }
-
-        return null;
+        zBuffer.apply((d) -> d.snapToGrid(grid));
+        zBuffer.drawAllBackToFront(g);
     }
 
     public void selectObjectAtPosition(int x, int y) {
-        IDraggable obj = getObjectAtPosition(x, y);
+        IDraggable obj = zBuffer.getFrontMostAtPosition(x, y);
         updateSelection(obj);
     }
 
@@ -195,13 +183,11 @@ public class DraggableCanvas  extends JPanel implements MouseWheelListener, Mous
         MenuItem remove = new MenuItem("Remove");
         objectPopup.add(remove);
 
-        remove.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent event) {
+        remove.addActionListener((event) -> {
                 if(selection != null) {
                     selection.remove(DraggableCanvas.this);
                     selection = null;
                 }
-            }
         } );
     }
 
@@ -210,35 +196,27 @@ public class DraggableCanvas  extends JPanel implements MouseWheelListener, Mous
         add(backgroundPopup);
 
         MenuItem showGridM = new MenuItem("Show Grid");
-        showGridM.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent event) {
-                grid.showGrid(true);
-                drawObjects();
-            }
+        showGridM.addActionListener( (event) -> {
+            grid.showGrid(true);
+            drawObjects();
         } );
 
         MenuItem hideGridM = new MenuItem("Hide Grid");
-        hideGridM.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent event) {
-                grid.showGrid(false);
-                drawObjects();
-            }
+        hideGridM.addActionListener( (event) -> {
+            grid.showGrid(false);
+            drawObjects();
         } );
 
         MenuItem enableGridM = new MenuItem("Enable Snap-to-Grid");
-        enableGridM.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent event) {
-                grid.snapToGrid(true);
-                drawObjects();
-            }
+        enableGridM.addActionListener( (event) -> {
+            grid.snapToGrid(true);
+            drawObjects();
         } );
 
         MenuItem disableGridM = new MenuItem("Disable Snap-to-Grid");
-        disableGridM.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent event) {
-                grid.snapToGrid(false);
-                drawObjects();
-            }
+        disableGridM.addActionListener( (event) -> {
+            grid.snapToGrid(false);
+            drawObjects();
         } );
 
         backgroundPopup.add(showGridM);
@@ -254,7 +232,7 @@ public class DraggableCanvas  extends JPanel implements MouseWheelListener, Mous
 
     private void popupEvent(MouseEvent event) {
         if (event.isPopupTrigger()) {
-            IDraggable object = getObjectAtPosition(event.getX(), event.getY());
+            IDraggable object = zBuffer.getFrontMostAtPosition(event.getX(), event.getY());
             if(object != null) {
                 objectPopup.show(this, event.getX(), event.getY());
             } else {
@@ -449,7 +427,7 @@ public class DraggableCanvas  extends JPanel implements MouseWheelListener, Mous
     }
 
     protected void clearGroupSelection() {
-        //reset color back to normal
+        //clear color back to normal
         for (IDraggable d: this.groupSelection) {
             unhighlightNodeAndLinks(d);
         }
@@ -460,7 +438,7 @@ public class DraggableCanvas  extends JPanel implements MouseWheelListener, Mous
     }
 
     protected void updateGroupSelection() {
-        for (IDraggable d: zBuffer) {
+        zBuffer.apply( (d) -> {
             if (isGroupSelectable(d) &&
                     groupSelectionBounds.contains(d.getPolygon().xpoints[0], d.getPolygon().ypoints[0]) &&
                     groupSelectionBounds.contains(d.getPolygon().xpoints[2], d.getPolygon().ypoints[2])) {
@@ -469,7 +447,7 @@ public class DraggableCanvas  extends JPanel implements MouseWheelListener, Mous
                 //highlight color of selected objects
                 highlightNodeAndLinks(d);
             }
-        }
+        });
     }
 
     public boolean validateGroupSelectionBounds(int deltaX, int deltaY, int width, int height) {
@@ -533,32 +511,4 @@ public class DraggableCanvas  extends JPanel implements MouseWheelListener, Mous
         d.setColor(d.getUnselectedColor());
         d.setBorderColor(d.getUnselectedBorderColor());
     }
-
-    final static float DASH[] = {10.0f};
-    final static BasicStroke DASHED_STROKE = new BasicStroke(1.0f,
-            BasicStroke.CAP_BUTT,
-            BasicStroke.JOIN_MITER,
-            10.0f, DASH, 0.0f);
-
-    private boolean                         disableDrawing;
-
-    protected PopupMenu                     objectPopup;
-    protected PopupMenu                     backgroundPopup;
-    protected PopupMenu                     groupSelectionPopup;
-
-    protected java.util.List<IDraggable>    savedSelection;
-    protected java.util.List<IDraggable>    groupSelection;
-    protected boolean                       groupSelectionEnabled;
-    protected boolean                       groupSelectionActive;
-    protected Rectangle                     groupSelectionBounds;
-    protected Point                         groupSelectionStart;
-    protected Point                         groupSelectionEnd;
-
-    protected Point startPos;
-    protected IDraggable                    selection;
-    protected int                           width;
-    protected int                           height;
-    protected Grid                          grid;
-
-    protected java.util.List<IDraggable>    zBuffer;
 }

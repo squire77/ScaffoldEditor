@@ -1,4 +1,6 @@
-package com.pd.modelcg.codegen.graphics.draggablecanvas;
+package com.pd.modelcg.codegen.graphics.algorithms;
+
+import com.pd.modelcg.codegen.graphics.algorithms.LinesIntersect;
 
 import java.awt.*;
 
@@ -43,7 +45,7 @@ public class PolygonSplit {
             a1 = a2;
             b1 = b2;
 
-            //don't reset the side if it's on the line
+            //don't clear the side if it's on the line
             if (side2 != 0) {
                 side1 = side2;
             }

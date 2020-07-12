@@ -1,7 +1,5 @@
 package com.pd.modelcg.console.docviewer;
 
-import com.pd.modelcg.codegen.graphics.draggablecanvas.DraggableCanvas;
-
 import java.awt.*;
 import javax.swing.*;
 
@@ -20,23 +18,21 @@ public class OverlayImage extends JViewport {
         //<<insert code here>>
     }
 
-    //public void sphere(int x, int y, int z, int r) {
+    //public void sphere(Graphics2D g, int x, int y, int z, int r) {
     //    (X-H)2 + (Y-K)2=r2
     //    for (int i=-r; i<=r; ++r){
     //        int x = r*r -
     //    }
     //}
 
-    public void circle(int x, int y, int z, int d) {
-        Graphics2D g = (Graphics2D) DraggableCanvas.image.getGraphics();
+    public void circle(Graphics2D g, int x, int y, int z, int d) {
         g.setPaint(Color.blue);
         int a = CENTER_X + x + (int)(COS_30*z);
         int b = CENTER_Y - y - (int)(SIN_30*z);
         g.drawOval(a, b, d, d);
     }
 
-    public void line(int x1, int y1, int z1, int x2, int y2, int z2) {
-        Graphics2D g = (Graphics2D) DraggableCanvas.image.getGraphics();
+    public void line(Graphics2D g, int x1, int y1, int z1, int x2, int y2, int z2) {
         g.setPaint(Color.blue);
         int a = CENTER_X + x1 + (int)(COS_30*z1);
         int b = CENTER_Y - y1 - (int)(SIN_30*z1);
@@ -45,7 +41,7 @@ public class OverlayImage extends JViewport {
         g.drawLine(a, b, c, d);
     }
 
-    public void point(int x, int y, int z) {
-        line(x,y,z,x,y,z);
+    public void point(Graphics2D g, int x, int y, int z) {
+        line(g, x,y,z,x,y,z);
     }
 }

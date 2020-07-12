@@ -24,17 +24,8 @@ public class GraphCanvas extends DraggableCanvas {
         this.graph = new Graph();
     }
     
-    public Node getNodeAtPosition(int x, int y) {
-        // select objects from the top down in the z-buffer (in case they overlap)
-        if(zBuffer.size() > 0) {
-            for(int i=zBuffer.size() - 1; i >= 0; i--) {
-                IDraggable next = zBuffer.get(i);
-                if( next instanceof Node && ((Node) next).containsIgnoreEndPoints(x, y))
-                    return (Node) next;
-            }
-        }
-
-        return null;
+    public Node getFrontMostAtPosition(int x, int y) {
+        return (Node) zBuffer.getFrontMostAtPosition(x, y);
     }
     
     @Override

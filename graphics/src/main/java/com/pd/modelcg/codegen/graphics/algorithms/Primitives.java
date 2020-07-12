@@ -1,4 +1,6 @@
-package com.pd.modelcg.codegen.graphics.draggablecanvas;
+package com.pd.modelcg.codegen.graphics.algorithms;
+
+import com.pd.modelcg.codegen.graphics.algorithms.PolygonSplit;
 
 import java.awt.*;
 import java.awt.geom.AffineTransform;

@@ -1,6 +1,7 @@
 package com.pd.modelcg.console.canvasext;
 
 import com.pd.modelcg.codegen.graphics.draggablecanvas.DraggableCanvas;
+import com.pd.modelcg.codegen.graphics.draggablecanvas.IDraggableCanvas;
 import com.pd.modelcg.codegen.graphics.graphcanvas.Graph;
 import com.pd.modelcg.codegen.graphics.graphcanvas.Link;
 import com.pd.modelcg.codegen.model.uml.basic.cm.CmAssocEnd;
@@ -77,7 +78,7 @@ abstract public class UMLLink extends Link implements Observer {
     }
             
     @Override
-    public void remove(DraggableCanvas canvas) {
+    public void remove(IDraggableCanvas canvas) {
         super.remove(canvas);
         
         //remove from model, but remember, inheritance links don't have an assoc

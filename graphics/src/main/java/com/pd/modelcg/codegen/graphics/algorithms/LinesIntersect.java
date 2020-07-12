@@ -1,4 +1,4 @@
-package com.pd.modelcg.codegen.graphics.draggablecanvas;
+package com.pd.modelcg.codegen.graphics.algorithms;
 
 public class LinesIntersect {
     public static final int DONT_INTERSECT = 0, COLLINEAR = 1, DO_INTERSECT = 2;

@@ -3,7 +3,7 @@ package com.pd.modelcg.codegen.graphics.draggablecanvas;
 import java.awt.*;
 import java.awt.event.MouseEvent;
 
-public class Draggable  extends Selectable implements IDraggable {
+public class Draggable extends Selectable implements IDraggable {
     public Draggable(Polygon polygon) {
         super(polygon);
     }
@@ -14,7 +14,7 @@ public class Draggable  extends Selectable implements IDraggable {
     }
 
     //only a subclass can call this constructor, and if it does,
-    //initialize(Polygon) must be called after the contructor is called
+    //initialize(Polygon) must be called after the constructor is called
     protected Draggable() {
     }
 
@@ -65,7 +65,7 @@ public class Draggable  extends Selectable implements IDraggable {
         }
     }
 
-    public void remove(DraggableCanvas canvas) {
+    public void remove(IDraggableCanvas canvas) {
         canvas.removeObject(this);
     }
 
