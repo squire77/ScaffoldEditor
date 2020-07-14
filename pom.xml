@@ -9,6 +9,11 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
+    <properties>
+      <maven.comiler.target>1.8</maven.comiler.target>
+      <maven.comiler.source>1.8</maven.comiler.source>
+    </properties>
+
     <modules>
         <module>model</module>
         <module>graphics</module>
