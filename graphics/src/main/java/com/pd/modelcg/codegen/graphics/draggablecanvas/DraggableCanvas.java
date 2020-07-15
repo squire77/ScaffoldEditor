@@ -253,7 +253,7 @@ public class DraggableCanvas  extends JPanel implements MouseWheelListener, Mous
     }
 
     private void popupEvent(MouseEvent event) {
-        if (event.isPopupTrigger()) {
+        if (event.isPopupTrigger() || event.isControlDown()) {
             IDraggable object = getObjectAtPosition(event.getX(), event.getY());
             if(object != null) {
                 objectPopup.show(this, event.getX(), event.getY());
