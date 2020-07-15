@@ -43,6 +43,7 @@ public class ModelCGApplication {
      * event dispatch thread.
      */
     private static void createAndShowGUI(JFrame frame) {
+        frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);

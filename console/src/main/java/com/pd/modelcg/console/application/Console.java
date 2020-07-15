@@ -393,13 +393,13 @@ public class Console extends JFrame implements ITitleIndicator {
         helpMenu.add(projectHelp);
         clicheHelp.addActionListener((event) ->
             startViewer.openFile(
-                    "C:/GitHub/ScaffoldEditor/console/src/main/resources/data/help/cliche_help.txt"));
+                    "/home/pi/dev/ScaffoldEditor/console/src/main/resources/data/help/cliche_help.txt"));
         classHelp.addActionListener((event) ->
             startViewer.openFile(
-                    "C:\\GitHub\\ScaffoldEditor\\console\\src\\main\\resources/data/help/class_help.txt"));
+                    "/home/pi/dev/ScaffoldEditor/console/src/main/resources/data/help/class_help.txt"));
         projectHelp.addActionListener((event) ->
             startViewer.openFile(
-                    "C:\\GitHub\\ScaffoldEditor\\console\\src\\main\\resources/data/help/project_help.txt"));
+                    "/home/pi/dev/ScaffoldEditor/console/src/main/resources/data/help/project_help.txt"));
         
         //"About" menu
         JMenu aboutMenu = new JMenu( "About" );
@@ -425,7 +425,7 @@ public class Console extends JFrame implements ITitleIndicator {
         });
         
         //set default start text
-        startViewer.openFile("C:/GitHub/ScaffoldEditor/console/src/main/resources/data/help/class_help.txt");
+        startViewer.openFile("/home/pi/dev/ScaffoldEditor/console/src/main/resources/data/help/class_help.txt");
   
         // menu bar
         JMenuBar menuBar = new JMenuBar();

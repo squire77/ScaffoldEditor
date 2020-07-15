@@ -10,9 +10,9 @@ public class ConsoleConfig {
     private final String licenseFile;
 
     public ConsoleConfig(
-            @Value("${project.recent:C:/GitHub/ScaffoldEditor/projects/MyProject/MyProject.csv}")
+            @Value("${project.recent:C:/home/pi/dev/ScaffoldEditor/projects/MyProject/MyProject.csv}")
             String mostRecentProject,
-            @Value("${license.file:C:/GitHub/ScaffoldEditor/projects/license.txt}")
+            @Value("${license.file:C:/home/pi/dev/ScaffoldEditor/projects/license.txt}")
             String licenseFile) {
 
         this.mostRecentProject = mostRecentProject;

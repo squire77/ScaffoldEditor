@@ -113,7 +113,13 @@ public class FileUtility
     }
     
     public static File[] getFilesStartingWith( String dirName, String startsWith){
-    	File dir = new File(dirName);
+        File dir;
+        if (dirName.endsWith("\\")) {
+            dir = new File(dirName.substring(0, dirName.length() - 1));
+        } else {
+            dir = new File(dirName);
+        }
+        
         startChars = startsWith;
         
     	return dir.listFiles(new FilenameFilter() {
