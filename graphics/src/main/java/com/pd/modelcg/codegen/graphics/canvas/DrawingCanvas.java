@@ -12,6 +12,7 @@ public class DrawingCanvas<T extends IDrawable> extends JPanel
     private int                   height;
     private ZBuffer<T>            zBuffer;
 
+    // call drawObjects() after creating the canvas to show initial paint
     public DrawingCanvas(Color backgroundColor)
     {
         Dimension screenDim = Toolkit.getDefaultToolkit().getScreenSize();

@@ -2,33 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29a698ff-d09a-421a-8480-11c531508002" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/canvas/DrawingCanvas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/canvas/ZBuffer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/IDraggableCanvas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/SimpleAppExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/SimpleConsoleExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/console/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/console/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/canvasext/UMLClassNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/canvasext/UMLClassNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/canvasext/UMLLink.java" beforeDir="false" afterPath="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/canvasext/UMLLink.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/canvasext/UMLPackageNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/canvasext/UMLPackageNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/docviewer/OverlayImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/docviewer/OverlayImage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/Draggable.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/Draggable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/DraggableCanvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/DraggableCanvas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/Drawable.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/canvas/Drawable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/IDraggable.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/IDraggable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/IDrawable.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/canvas/IDrawable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/IMousable.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/IMousable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/ISelectable.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/ISelectable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/LinesIntersect.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/algorithms/LinesIntersect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/PolygonSplit.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/algorithms/PolygonSplit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/Primitives.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/algorithms/Primitives.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/Selectable.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/Selectable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/graphcanvas/Adornment.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/graphcanvas/Adornment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/graphcanvas/EndPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/graphcanvas/EndPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/graphcanvas/GraphCanvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/graphcanvas/GraphCanvas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/graphcanvas/Link.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/graphcanvas/Link.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/graphcanvas/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/graphcanvas/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/canvas/DrawingCanvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/canvas/DrawingCanvas.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -58,29 +35,15 @@
     <select />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/Draggable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="53">
-              <caret line="5" column="38" lean-forward="true" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
-              <folding>
-                <element signature="e#789#790#0" expanded="true" />
-                <element signature="e#830#831#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/Selectable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="46" column="48" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
+            <state relative-caret-position="-458">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -89,19 +52,55 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/ISelectable.java">
+        <entry file="file://$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/DraggableCanvas.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="163">
+              <caret line="135" column="31" lean-forward="true" selection-start-line="135" selection-start-column="31" selection-end-line="135" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/DraggableCanvas.java">
+        <entry file="file://$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/canvas/DrawingCanvas.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1394">
-              <caret line="82" column="5" lean-forward="true" selection-start-line="82" selection-start-column="5" selection-end-line="82" selection-end-column="5" />
+            <state relative-caret-position="187">
+              <caret line="14" column="73" selection-start-line="14" selection-start-column="73" selection-end-line="14" selection-end-column="73" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/console/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/SimpleAppExample.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="40" column="45" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/ModelCGApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="319">
+              <caret line="20" column="35" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -110,37 +109,38 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/canvas/DrawingCanvas.java">
+        <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/SimpleConsoleExample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="884">
-              <caret line="62" column="18" lean-forward="true" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
+            <state relative-caret-position="-389">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#736#737#0" expanded="true" />
-                <element signature="e#791#792#0" expanded="true" />
+                <element signature="e#1455#2006#0" expanded="true" />
+                <element signature="e#2005#2006#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/graphcanvas/GraphCanvas.java">
+        <entry file="file://$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/canvas/Drawable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+            <state relative-caret-position="866">
+              <caret line="70" column="17" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
               <folding>
-                <element signature="e#668#669#0" expanded="true" />
-                <element signature="e#734#735#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#2058#2059#0" expanded="true" />
+                <element signature="e#2101#2102#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/canvasext/UMLClassNode.java">
+        <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/application/Console.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="88" selection-start-line="88" selection-end-line="88" />
+            <state relative-caret-position="281">
+              <caret line="310" column="17" lean-forward="true" selection-start-line="310" selection-start-column="17" selection-end-line="310" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -307,7 +307,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -319,6 +318,73 @@
               <item name="ScaffoldEditor" type="b2602c69:ProjectViewProjectNode" />
               <item name="ScaffoldEditor" type="462c0819:PsiDirectoryNode" />
               <item name="console" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ScaffoldEditor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ScaffoldEditor" type="462c0819:PsiDirectoryNode" />
+              <item name="console" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ScaffoldEditor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ScaffoldEditor" type="462c0819:PsiDirectoryNode" />
+              <item name="console" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ScaffoldEditor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ScaffoldEditor" type="462c0819:PsiDirectoryNode" />
+              <item name="console" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ScaffoldEditor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ScaffoldEditor" type="462c0819:PsiDirectoryNode" />
+              <item name="console" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="console" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ScaffoldEditor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ScaffoldEditor" type="462c0819:PsiDirectoryNode" />
+              <item name="console" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="console" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ScaffoldEditor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ScaffoldEditor" type="462c0819:PsiDirectoryNode" />
+              <item name="console" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ScaffoldEditor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ScaffoldEditor" type="462c0819:PsiDirectoryNode" />
+              <item name="console" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ScaffoldEditor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ScaffoldEditor" type="462c0819:PsiDirectoryNode" />
+              <item name="console" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="help" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ScaffoldEditor" type="b2602c69:ProjectViewProjectNode" />
@@ -389,6 +455,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -452,6 +519,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SimpleAppExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pd.modelcg.console.SimpleAppExample" />
+      <module name="console" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pd.modelcg.console.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ModelCGApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="console" />
       <extension name="coverage">
@@ -468,9 +548,11 @@
     <list>
       <item itemvalue="Application.AppRunner" />
       <item itemvalue="Application.ModelCGApplication" />
+      <item itemvalue="Application.SimpleAppExample" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SimpleAppExample" />
         <item itemvalue="Application.ModelCGApplication" />
         <item itemvalue="Application.AppRunner" />
       </list>
@@ -503,9 +585,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23298033" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24054463" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -522,7 +603,7 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.38297874" />
+      <window_info anchor="bottom" id="Version Control" order="10" visible="true" weight="0.38297874" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.23076923" />
       <window_info anchor="bottom" id="Spring" order="12" weight="0.32975295" />
       <window_info anchor="right" id="Maven" order="0" weight="0.2118003" />
@@ -536,6 +617,38 @@
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Maven Projects" order="9" visible="true" weight="0.22595078" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24054463" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32569557" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.40589198" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.41245973" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.38297874" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.23076923" />
+      <window_info anchor="bottom" id="Spring" order="12" weight="0.32975295" />
+      <window_info anchor="right" id="Maven" order="0" weight="0.2118003" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Database" order="2" weight="0.32997763" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" visible="true" weight="0.22595078" />
+      <window_info anchor="right" id="Ant Build" order="9" weight="0.24962178" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -598,6 +711,10 @@
       </breakpoints>
     </breakpoint-manager>
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/application/ErrorDialog.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -630,14 +747,14 @@
     <entry file="file://$PROJECT_DIR$/console/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="58" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/application/Console.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
+        <state relative-caret-position="281">
+          <caret line="310" column="17" lean-forward="true" selection-start-line="310" selection-start-column="17" selection-end-line="310" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -747,8 +864,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/console/src/main/java/com/pd/modelcg/console/ModelCGApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-308">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        <state relative-caret-position="319">
+          <caret line="20" column="35" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -944,34 +1061,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/canvas/DrawingCanvas3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="9" column="40" lean-forward="true" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#680#681#0" expanded="true" />
-            <element signature="e#735#736#0" expanded="true" />
-            <element signature="e#1437#1438#0" expanded="true" />
-            <element signature="e#1475#1476#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/DraggableCanvas3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="60" column="26" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#15516#15517#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/canvas/DrawingCanvas3.java" />
+    <entry file="file://$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/DraggableCanvas3.java" />
     <entry file="file://$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/canvas/Drawable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
+        <state relative-caret-position="866">
           <caret line="70" column="17" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -990,8 +1084,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/Selectable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="46" column="48" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
+        <state relative-caret-position="-458">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1000,8 +1094,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/draggablecanvas/DraggableCanvas.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
-          <caret line="82" column="5" lean-forward="true" selection-start-line="82" selection-start-column="5" selection-end-line="82" selection-end-column="5" />
+        <state relative-caret-position="163">
+          <caret line="135" column="31" lean-forward="true" selection-start-line="135" selection-start-column="31" selection-end-line="135" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1010,12 +1104,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/graphics/src/main/java/com/pd/modelcg/codegen/graphics/canvas/DrawingCanvas.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="62" column="18" lean-forward="true" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
+        <state relative-caret-position="187">
+          <caret line="14" column="73" selection-start-line="14" selection-start-column="73" selection-end-line="14" selection-end-column="73" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#736#737#0" expanded="true" />
-            <element signature="e#791#792#0" expanded="true" />
           </folding>
         </state>
       </provider>
